@@ -16,16 +16,13 @@
 </head>
 <body>
 <div class="container">
-
     <div sec:authorize="isAuthenticated()">
         <form id="logoutForm" method="POST" th:action="@{/logout}">
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
         </form>
 		<h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
         <h2><span sec:authentication="principal.username"></span> | <a onclick="document.forms['logoutForm'].submit()">Logout</a></h2>
-
     </div>
-
 </div>
 <!-- /container -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

@@ -1,0 +1,23 @@
+facebook:
+  client:
+    clientId: 233668646673605
+    clientSecret: 33b17e044ee6a4fa383f46ec6e28ea1d
+    accessTokenUri: https://graph.facebook.com/oauth/access_token
+    userAuthorizationUri: https://www.facebook.com/dialog/oauth
+    tokenName: oauth_token
+    authenticationScheme: query
+    clientAuthenticationScheme: form
+  resource:
+    userInfoUri: https://graph.facebook.com/me
+    
+linkedin:
+  client:
+    clientId: 77famehzl620nk
+    clientSecret: VA1CLw19tTfImIgc
+    accessTokenUri: https://www.linkedin.com/oauth/v2/accessToken
+    userAuthorizationUri: https://www.linkedin.com/uas/oauth2/authorization
+    clientAuthenticationScheme: form
+  resource:
+    userInfoUri: https://api.linkedin.com/v1/people/~:(id,first-name,last-name,email-address,headline,location)?format=json
+
+
